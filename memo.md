@@ -22,12 +22,16 @@
     - [官方说明](https://github.com/ruslo/hunter/wiki/example.custom.config.id)
     - 方法
       1. 配置为LOCAL
-      >HunterGate(
-      URL "https://github.com/ruslo/hunter/archive/v0.23.57.tar.gz"
-      SHA1 "8befbbaea51cb54681f6e690212ed753ae807529"
-      **LOCAL** 
-    )
+        ```
+        HunterGate(
+        URL "https://github.com/ruslo/hunter/archive/v0.23.57.tar.gz"
+        SHA1 "8befbbaea51cb54681f6e690212ed753ae807529"
+        LOCAL  # 重点
+        )
+        ```
 
-      1. 实现${CMAKE_CURRENT_LIST_DIR}/cmake/Hunter/config.cmake
+      2. 实现${CMAKE_CURRENT_LIST_DIR}/cmake/Hunter/config.cmake
         > hunter_config(OpenSSL VERSION 1.0.2a)
         > hunter_package(Foo VERSION 2.0 CMAKE_ARGS FOO_WITH_BOO=OFF)
+
+        
