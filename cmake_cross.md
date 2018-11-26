@@ -2,6 +2,7 @@
 ## CMAKE CROSS COMPILE 笔记
 
     - [参考] (https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html)
+    - [WIKI] (https://gitlab.kitware.com/cmake/community/wikis/home)
   
 -------------
 ### 基本用法
@@ -54,4 +55,10 @@
     > set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
     > set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 
+  - RPATH  with .so while crossing
+    - https://stackoverflow.com/questions/30400362/cmake-cross-compile-target-rpath
+    - https://gitlab.kitware.com/cmake/community/wikis/doc/cmake/RPATH-handling
+    - https://gitlab.kitware.com/cmake/community/wikis/doc/cmake/recipe/InstallToALocalFolderForTesting
+    - https://stackoverflow.com/questions/39075040/cmake-cmake-automoc-in-cross-compilation?rq=1
+    -  [auto genereate cpp to test]https://stackoverflow.com/questions/43781207/how-to-cross-compile-with-cmake-arm-none-eabi-on-windows
    
