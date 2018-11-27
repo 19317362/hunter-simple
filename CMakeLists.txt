@@ -3,6 +3,8 @@
 
 cmake_minimum_required(VERSION 3.2)
 
+option(HUNTER_BUILD_SHARED_LIBS "Print a lot of info" ON) # Good
+
 ### Hunter snapshot that will be used ###
 include("cmake/HunterGate.cmake")
 HunterGate(
