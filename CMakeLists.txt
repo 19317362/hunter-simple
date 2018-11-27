@@ -5,6 +5,16 @@ cmake_minimum_required(VERSION 3.2)
 
 option(HUNTER_BUILD_SHARED_LIBS "Print a lot of info" ON) # Good
 
+# https://stackoverflow.com/questions/10671916/how-to-copy-dll-files-into-the-same-folder-as-the-executable-using-cmake
+# SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY
+#     ${PROJECT_SOURCE_DIR}/pub CACHE
+#     PATH "Directory where all the .lib files are dumped." FORCE)
+# SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY
+#     ${PROJECT_SOURCE_DIR}/pub CACHE
+#     PATH "Directory where .exe and .dll files are dumped." FORCE)
+set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
 ### Hunter snapshot that will be used ###
 include("cmake/HunterGate.cmake")
 HunterGate(
@@ -44,3 +54,4 @@ elseif(ANDROID)
 else()
   add_test(NAME SimpleTest COMMAND simple)
 endif()
+

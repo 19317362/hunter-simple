@@ -6,6 +6,8 @@
   
 -------------
 ### 基本用法
+  - hunter_config(foo VERSION ${HUNTER_foo_VERSION} CMAKE_ARGS DUMMY=1)
+  - HUNTER_KEEP_PACKAGE_SOURCES
   - CMAKE_STAGING_PREFIX
     > optional. It may be used to specify a path on the host to install to
  
