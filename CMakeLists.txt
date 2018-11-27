@@ -14,7 +14,15 @@ option(HUNTER_BUILD_SHARED_LIBS "Print a lot of info" ON) # Good
 #     PATH "Directory where .exe and .dll files are dumped." FORCE)
 set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+# install(FILES $<TARGET_FILE:OpenAL::OpenAL> DESTINATION lib)
 
+# install(
+#     FILES
+#     $<TARGET_FILE:OpenSSL::Crypto>
+#     $<TARGET_FILE:ZLIB::zlib>
+#     DESTINATION
+#     lib
+# )
 ### Hunter snapshot that will be used ###
 include("cmake/HunterGate.cmake")
 HunterGate(

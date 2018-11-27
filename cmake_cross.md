@@ -6,7 +6,10 @@
   
 -------------
 ### 基本用法
+  - osx alias in vim .bash_profile 
   - hunter_config(foo VERSION ${HUNTER_foo_VERSION} CMAKE_ARGS DUMMY=1)
+  - set(TESTING_CONFIG_OPT FILEPATH ${CMAKE_CURRENT_LIST_DIR}/config.cmake) 
+  - PROTOBUF https://github.com/ruslo/hunter/issues/494
   - HUNTER_KEEP_PACKAGE_SOURCES
   - CMAKE_STAGING_PREFIX
     > optional. It may be used to specify a path on the host to install to
