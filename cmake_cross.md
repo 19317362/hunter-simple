@@ -1,7 +1,7 @@
 
 ## CMAKE CROSS COMPILE 笔记
 
-    - [参考] (https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html)
+    - [参考] (https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html)
     - [WIKI] (https://gitlab.kitware.com/cmake/community/wikis/home)
   
 -------------
