@@ -40,9 +40,14 @@ find_package(OpenSSL REQUIRED)
 ### Find dependencies ###
 find_package(GTest CONFIG REQUIRED) # GTest::main
 
+hunter_add_package(Boost)
+find_package(Boost CONFIG REQUIRED)
+
 ### Targets ###
 add_executable(simple simple.cpp)
-target_link_libraries(simple PUBLIC GTest::main OpenSSL::SSL OpenSSL::Crypto)
+target_link_libraries(simple PUBLIC
+Boost::boost
+GTest::main OpenSSL::SSL OpenSSL::Crypto)
 
 ### Testing ###
 enable_testing()
