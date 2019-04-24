@@ -26,8 +26,8 @@ set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 ### Hunter snapshot that will be used ###
 include("cmake/HunterGate.cmake")
 HunterGate(
-  URL "https://github.com/ruslo/hunter/archive/v0.23.57.tar.gz"
-  SHA1 "8befbbaea51cb54681f6e690212ed753ae807529"
+  URL "https://github.com/ruslo/hunter/archive/v0.23.161.tar.gz"
+  SHA1 "714a57df86883ae726f3a0572bf6b74a2f7000c0"
   LOCAL # <----- Use local config.cmake
          # ${CMAKE_CURRENT_LIST_DIR}/cmake/Hunter/config.cmake
 )

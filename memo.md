@@ -34,4 +34,6 @@
         > hunter_config(OpenSSL VERSION 1.0.2a)
         > hunter_package(Foo VERSION 2.0 CMAKE_ARGS FOO_WITH_BOO=OFF)
 
- - ARM docker run --rm -it -v $(pwd):/workdir:rw multiarch/crossbuild
+  - ARM docker run --rm -it -v $(pwd):/workdir:rw multiarch/crossbuild
+
+  - [source file manage](https://github.com/ruslo/sugar/wiki/Collecting-sources)
