@@ -33,10 +33,12 @@ HunterGate(
 )
 project(HunterSimple)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 ### Download dependencies ###
 hunter_add_package(GTest)
-hunter_add_package(OpenSSL)
-find_package(OpenSSL REQUIRED)
+# hunter_add_package(OpenSSL)
+# find_package(OpenSSL REQUIRED)
 ### Find dependencies ###
 find_package(GTest CONFIG REQUIRED) # GTest::main
 
@@ -47,7 +49,9 @@ find_package(Boost CONFIG REQUIRED)
 add_executable(simple simple.cpp)
 target_link_libraries(simple PUBLIC
 Boost::boost
-GTest::main OpenSSL::SSL OpenSSL::Crypto)
+GTest::main 
+# OpenSSL::SSL OpenSSL::Crypto
+)
 
 ### Testing ###
 enable_testing()
