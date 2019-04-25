@@ -24,6 +24,16 @@ class Header
 
       Dump();
     }
+
+    template <typename TReqBody,typename TAckBody> 
+    void Print2(const TReqBody& reqBody,const TAckBody& ackBody)
+    {
+      m_name = reqBody;
+      m_cnt = ackBody;
+
+      Dump();
+
+    }
     ~Header()
     {
 
@@ -38,6 +48,7 @@ void call_test(Args&&... args  )
   Header vl_hdr;
   std::cout<<"Cnt:" << sizeof...(args) <<std::endl;
   vl_hdr.Print(std::forward<Args>(args)...);
+  vl_hdr.Print2(std::forward<Args>(args)...);
   //return vl_hdr;
 } 
 
