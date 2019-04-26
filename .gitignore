@@ -7,3 +7,7 @@ install_manifest.txt
 # Temp build/install dirs
 _builds/*
 _install/*
+.vs/
+.vscode/
+Testing/
+
